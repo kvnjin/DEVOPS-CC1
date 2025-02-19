@@ -10,3 +10,11 @@ Ce projet est destiné à valider les connaissances en DevOps des élèves de 3�
 4. Implémentez une github action pour déployer automatiquement le site sur un hebergement gratuit (Netlify)
 
 ## Test Results
+
+[![Run Tests](https://github.com/kvnjin/DEVOPS-CC1/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/kvnjin/DEVOPS-CC1/actions/workflows/main.yaml)
+
+## Deploy on Netlify
+
+https://devopscc1.netlify.app/
+
+
