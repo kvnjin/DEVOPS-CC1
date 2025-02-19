@@ -1,12 +1,12 @@
 name: Deploy On Netlify
 
 on:
-      workflow_dispatch:
-      inputs:
-        Environnement:
-          description: 'The Environnement I need to deploy on'
-          required: true
-          default: '/dev'
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
