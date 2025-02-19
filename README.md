@@ -15,6 +15,7 @@ Ce projet est destiné à valider les connaissances en DevOps des élèves de 3�
 
 ## Deploy on Netlify
 
+[![Deploy On Netlify](https://github.com/kvnjin/DEVOPS-CC1/actions/workflows/deploy.yaml/badge.svg)](https://github.com/kvnjin/DEVOPS-CC1/actions/workflows/deploy.yaml)
 
 ## URL of Deployment
 
