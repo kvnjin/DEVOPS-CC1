@@ -30,4 +30,4 @@ jobs:
         with:
           publish-dir: ./dist
           github-token: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
-          deploy-token: ${{ secrets.NETLIFY_ID }}
+          production-branch: ${{ secrets.NETLIFY_ID }}
