@@ -30,6 +30,7 @@ jobs:
         with:
           publish-dir: ./dist
           production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           netlify-auth-token: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
           netlify-site-id: ${{ secrets.NETLIFY_ID }}
           
