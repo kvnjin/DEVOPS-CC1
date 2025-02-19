@@ -29,6 +29,6 @@ jobs:
         uses: nwtgck/actions-netlify@v2
         with:
           publish-dir: ./dist
-          deploy-token: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
-          site-id: ${{ secrets.NETLIFY_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_ID }}
           
