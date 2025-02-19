@@ -1,7 +1,7 @@
 name: Deploy On Netlify
 
 on:
-  workflow_dispatch:
+  push:
     branches:
       - main
   pull_request:
@@ -26,11 +26,9 @@ jobs:
         run: npm test
 
       - name: Deploy on Netlify
-        uses: nwtgck/actions-netlify@v1.0.0
+        uses: nwtgck/actions-netlify@v2
         with:
           publish-dir: ./dist
-          production-branch: main
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-auth-token: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
-          netlify-site-id: ${{ secrets.NETLIFY_ID }}
+          deploy-token: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
+          site-id: ${{ secrets.NETLIFY_ID }}
           
