@@ -1,7 +1,7 @@
 name: Deploy On Netlify
 
 on:
-  push:
+  workflow_dispatch:
     branches:
       - main
   pull_request:
@@ -29,6 +29,7 @@ jobs:
         uses: nwtgck/actions-netlify@v1.0.0
         with:
           publish-dir: ./dist
-          deploy-token: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
-          site-id: ${{ secrets.NETLIFY_ID }}
           production-branch: main
+          netlify-auth-token: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_ID }}
+          
